@@ -236,16 +236,23 @@ This repository intentionally documents **process, reasoning, and troubleshootin
 This ensures learning transparency **without increasing attack surface**.
 
 ---
+## Phase-01 Closure
 
-### 🚀 Phase 01 Closure
+This phase focused on building a solid foundation:
+- VM provisioning using KVM/libvirt
+- Basic Linux server setup
+- SSH remote access from host machine
+- Understanding modern SSH behavior (systemd socket activation)
+- Interpreting authentication failures and logs
 
-**Phase 01 is considered complete from a learning and documentation perspective.**
+Outcome:
+The VM can be managed entirely from the host via SSH without relying on GUI access.
+This environment will be reused for Python automation and system-level experiments in Phase-02.
 
-Remaining imperfections (e.g. bridged networking over Wi-Fi) are not blockers, but future exploration topics.
-
-Next phases will build *on top of this foundation*, not replace it.
+Status: ✅ Completed
 
 ---
 
 ➡️ **Next Phase Preview:**
 Phase 02 will focus on *service-level networking and server hardening*, preparing the lab for real workloads (APIs, dashboards, automation).
+
